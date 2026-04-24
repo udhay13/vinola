@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import { navServiceLinks } from "@/data/navServices";
 
 type FormData = {
   name: string;
@@ -222,14 +223,11 @@ export default function ContactSection() {
                       className="w-full px-4 py-3 rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] text-sm text-[#1F2937] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC]"
                     >
                       <option value="">Select a service</option>
-                      <option value="general_dentistry">General Dentistry</option>
-                      <option value="teeth_alignment">Teeth Alignment</option>
-                      <option value="root_canal">Root Canal Treatment</option>
-                      <option value="crown_bridge">Crown & Bridge</option>
-                      <option value="dental_implant">Dental Implant</option>
-                      <option value="child_dentistry">Child Dentistry</option>
-                      <option value="complete_denture">Complete Denture</option>
-                      <option value="cosmetic_dentistry">Cosmetic Dentistry</option>
+                      {navServiceLinks.map((service) => (
+                        <option key={service.href} value={service.label}>
+                          {service.label}
+                        </option>
+                      ))}
                     </select>
                   </div>
 

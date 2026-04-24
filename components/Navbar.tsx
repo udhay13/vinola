@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { navServiceLinks } from "@/data/navServices";
 
 type NavChild = { label: string; href: string; desc?: string };
 type NavLink = { label: string; href: string; children?: NavChild[] };
@@ -23,18 +24,7 @@ const navLinks: NavLink[] = [
   {
     label: "Services",
     href: "/services/general-dentistry",
-    children: [
-      { label: "General Dentistry", href: "/services/general-dentistry" },
-      { label: "Cosmetic Dentistry", href: "/services/cosmetic-dentistry" },
-      { label: "Orthodontics", href: "/services/orthodontics" },
-      { label: "Restorative Dentistry", href: "/services/restorative" },
-      { label: "Implant Dentistry", href: "/services/implants" },
-      { label: "Pediatric Dentistry", href: "/services/pediatric" },
-      { label: "Endodontics", href: "/services/endodontics" },
-      { label: "Periodontics", href: "/services/periodontics" },
-      { label: "Oral Surgery", href: "/services/oral-surgery" },
-      { label: "Smile Makeover", href: "/services/smile-makeover" },
-    ],
+    children: navServiceLinks,
   },
   {
     label: "Patients",

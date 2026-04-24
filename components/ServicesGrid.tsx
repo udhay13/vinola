@@ -4,7 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
-import { servicesData } from "@/data/services";
+import { landingServicesData } from "@/data/navServices";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -51,19 +51,19 @@ export default function ServicesGrid() {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
         >
-          {servicesData.map((service) => {
+          {landingServicesData.map((service) => {
             const Icon = service.icon;
             return (
               <motion.div
-                key={service.title}
+                key={service.label}
                 variants={cardVariants}
                 whileHover={{ y: -6, scale: 1.01 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <Link
-                  href={`/services/${service.slug}`}
+                  href={service.href}
                   className="block group relative p-7 rounded-2xl border border-[#E5E7EB] bg-white card-shadow hover:border-[#2CB1BC]/30 cursor-pointer h-full"
                   style={{ boxShadow: "0 4px 24px rgba(31,41,55,0.06)" }}
                 >
@@ -80,7 +80,7 @@ export default function ServicesGrid() {
                   {/* Content */}
                   <h3 className="text-lg font-bold text-[#1F2937] mb-2 group-hover:text-[#2CB1BC] transition-colors"
                     style={{ fontFamily: "var(--font-poppins)" }}>
-                    {service.title}
+                    {service.label}
                   </h3>
                   <p className="text-sm text-[#6B7280] leading-relaxed">{service.description}</p>
 

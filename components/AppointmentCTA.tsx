@@ -52,7 +52,7 @@ export default function AppointmentCTA() {
 
           {/* Trust badges */}
           <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
-            {["✓ No Hidden Fees", "✓ Same Day Appointments", "✓ Insurance Accepted", "✓ Pain-Free Treatments"].map((badge) => (
+            {["✓ Same Day Appointments", "✓ Pain-Free Treatments"].map((badge) => (
               <span key={badge} className="bg-white/10 px-3 py-1.5 rounded-full">{badge}</span>
             ))}
           </div>
