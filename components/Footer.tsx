@@ -24,30 +24,31 @@ const YoutubeIcon = () => (
 );
 
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Dr. Vinola", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Meet the Doctor", href: "/about/doctor" },
+  { label: "Our Team", href: "/about/team" },
+  { label: "Testimonials", href: "/patients/testimonials" },
+  { label: "Gallery", href: "/clinic/gallery" },
+  { label: "Contact", href: "/clinic/contact" },
 ];
 
 const servicesList = [
-  "General Dentistry",
-  "Teeth Alignment",
-  "Root Canal Treatment",
-  "Crown & Bridge",
-  "Dental Implant",
-  "Child Dentistry",
-  "Complete Denture",
-  "Cosmetic Dentistry",
+  { label: "General Dentistry", href: "/services/general-dentistry" },
+  { label: "Cosmetic Dentistry", href: "/services/cosmetic-dentistry" },
+  { label: "Orthodontics", href: "/services/orthodontics" },
+  { label: "Dental Implants", href: "/services/implants" },
+  { label: "Restorative Dentistry", href: "/services/restorative" },
+  { label: "Pediatric Dentistry", href: "/services/pediatric" },
+  { label: "Root Canal Treatment", href: "/services/endodontics" },
+  { label: "Smile Makeover", href: "/services/smile-makeover" },
 ];
 
 const legal = [
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Terms & Conditions", href: "/terms" },
-  { label: "Disclaimer", href: "#" },
-  { label: "Sitemap", href: "#" },
+  { label: "Refund & Cancellation", href: "/refund-policy" },
+  { label: "Medical Disclaimer", href: "/disclaimer" },
 ];
 
 const socialLinks = [
@@ -76,7 +77,6 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="space-y-5 lg:col-span-1">
-            {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
               <Image
                 src="/vd logo final-Photoroom.png"
@@ -154,13 +154,13 @@ export default function Footer() {
               style={{ fontFamily: "var(--font-poppins)" }}>Our Services</h3>
             <ul className="space-y-3" aria-label="Dental services">
               {servicesList.map((service) => (
-                <li key={service}>
+                <li key={service.label}>
                   <Link
-                    href="#services"
+                    href={service.href}
                     className="text-sm text-gray-400 hover:text-[#2CB1BC] transition-colors flex items-center gap-1.5 group"
                   >
                     <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {service}
+                    {service.label}
                   </Link>
                 </li>
               ))}
