@@ -2,33 +2,48 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import AppointmentCTA from "@/components/AppointmentCTA";
-import { Monitor, Camera, PenToolIcon as Tool, Search } from "lucide-react";
+import { Monitor, Camera, Scan, Zap, SmilePlus, Radio, PenToolIcon as Tool } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Dental Technology | Advanced Equipment | Vinola Dental Salem",
-  description: "Explore the advanced dental technology at Vinola Dental — digital X-rays, intraoral cameras, CAD/CAM, and laser dentistry for precise, comfortable care.",
+  description: "Explore the advanced dental technology at Vinola Dental — Digital RVG, OPG, Intraoral 3D Scanner, Laser Dentistry, Smile Outcome Simulator, and more for precise, comfortable care.",
 };
 
 const techEquipment = [
   {
-    icon: Search,
-    title: "Digital Radiography (X-Rays)",
-    desc: "Our digital X-ray sensors emit up to 90% less radiation than traditional film while providing instant, high-resolution images for immediate diagnosis and discussion.",
-  },
-  {
-    icon: Camera,
-    title: "Intraoral Cameras",
-    desc: "A pen-sized camera that displays high-definition video of the inside of your mouth on a screen, allowing you to see exactly what the dentist sees.",
+    icon: Radio,
+    title: "Digital Radiograph (RVG)",
+    desc: "Radiovisuograph (RVG) digital X-ray sensors emit up to 90% less radiation than traditional film while delivering instant, high-resolution images for immediate diagnosis — right at the chairside.",
   },
   {
     icon: Monitor,
-    title: "CAD/CAM Restorations",
-    desc: "Computer-Aided Design and Manufacturing technology allows us to design and mill precise, highly aesthetic crowns and restorations with exceptional accuracy.",
+    title: "Orthopantomogram (OPG)",
+    desc: "A full-mouth panoramic X-ray that provides a complete view of the teeth, jaw, and surrounding bone in a single image — essential for implant planning, orthodontics, and complex diagnosis.",
+  },
+  {
+    icon: Scan,
+    title: "Intraoral Scanner – 3D Scan",
+    desc: "Our intraoral scanner creates highly accurate 3D digital impressions of your teeth and gums in minutes — replacing messy traditional moulds. Used for consultations, aligners, crowns, and implants.",
+  },
+  {
+    icon: Zap,
+    title: "Laser Dentistry",
+    desc: "Dental lasers allow for precise, minimally invasive treatment of gum disease, soft tissue procedures, and cavity preparation — with significantly less discomfort, faster healing, and no stitches in many cases.",
+  },
+  {
+    icon: SmilePlus,
+    title: "Smile Outcome Simulator",
+    desc: "Before any cosmetic treatment begins, our smile outcome simulator lets you visualise your expected results digitally — so you can make confident, informed decisions about your smile transformation.",
+  },
+  {
+    icon: Camera,
+    title: "Intraoral Camera",
+    desc: "A pen-sized camera that displays high-definition video of the inside of your mouth on a screen, allowing you to see exactly what the dentist sees for a fully transparent consultation.",
   },
   {
     icon: Tool,
     title: "Advanced Endodontic Motor",
-    desc: "We use rotary endodontic systems with apex locators for root canal treatments, significantly reducing procedure time and increasing the success rate.",
+    desc: "We use rotary endodontic systems with apex locators for root canal treatments, significantly reducing procedure time, improving precision, and increasing the success rate.",
   },
 ];
 
@@ -49,6 +64,7 @@ export default function TechnologyPage() {
             <h2 className="text-3xl font-bold text-[#1F2937]" style={{ fontFamily: "var(--font-poppins)" }}>
               Clinical <span className="text-gradient">Innovations</span>
             </h2>
+            <p className="text-[#6B7280] mt-3 max-w-2xl mx-auto">Every piece of technology at Vinola Dental is chosen to serve one purpose — better care for you.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {techEquipment.map(({ icon: Icon, title, desc }) => (
@@ -80,14 +96,21 @@ export default function TechnologyPage() {
           <div className="grid sm:grid-cols-3 gap-4 text-left">
             {[
               { t: "Earlier Detection", d: "Find cavities and bone loss before they cause pain." },
-              { t: "Patient Comfort", d: "Faster procedures and non-invasive scanning." },
-              { t: "Better Education", d: "See what we see, so you can make informed choices." }
+              { t: "Patient Comfort", d: "Faster procedures, non-invasive scanning, and laser precision." },
+              { t: "Visualise Results", d: "See your expected smile outcome before treatment starts." },
             ].map((i) => (
               <div key={i.t} className="glass rounded-xl p-4 border border-white/50 card-shadow">
                 <div className="font-semibold text-[#1F2937] mb-1">{i.t}</div>
                 <div className="text-xs text-[#6B7280] leading-relaxed">{i.d}</div>
               </div>
             ))}
+          </div>
+          <div className="mt-10">
+            <Link href="/patients/appointment"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white font-semibold glow-teal-hover transition-all hover:scale-105"
+              style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)" }}>
+              Experience the Difference – Book Now
+            </Link>
           </div>
         </div>
       </section>

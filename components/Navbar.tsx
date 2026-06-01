@@ -32,7 +32,6 @@ const navLinks: NavLink[] = [
     children: [
       { label: "Patient Information", href: "/patients/information", desc: "First visit, policies & more" },
       { label: "Book Appointment", href: "/patients/appointment", desc: "Online appointment form" },
-      { label: "Pricing & Packages", href: "/patients/pricing", desc: "Treatment costs & EMI options" },
       { label: "Before & After", href: "/patients/gallery", desc: "Smile transformations" },
       { label: "FAQs", href: "/patients/faq", desc: "Common questions answered" },
       { label: "Testimonials", href: "/patients/testimonials", desc: "Patient reviews & stories" },
@@ -45,7 +44,6 @@ const navLinks: NavLink[] = [
       { label: "Contact Us", href: "/clinic/contact", desc: "Phone, WhatsApp & location" },
       { label: "Clinic Gallery", href: "/clinic/gallery", desc: "Photos of our clinic" },
       { label: "Technology", href: "/clinic/technology", desc: "Advanced dental equipment" },
-      { label: "Offers & Packages", href: "/clinic/offers", desc: "Special promotions" },
     ],
   },
 ];

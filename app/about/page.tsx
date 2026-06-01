@@ -28,7 +28,7 @@ const whyUs = [
   {
     icon: Users,
     title: "Family-Friendly Clinic",
-    desc: "Care for patients of all ages — from children to seniors — in a warm, welcoming space.",
+    desc: "Care for patients of all ages — newborns, toddlers, teens, adults, and seniors — in a warm, welcoming family clinic.",
   },
   {
     icon: CheckCircle,
@@ -37,8 +37,8 @@ const whyUs = [
   },
   {
     icon: Clock,
-    title: "Flexible Timings",
-    desc: "Morning and evening slots available so your dental care fits your lifestyle.",
+    title: "Convenient Hours",
+    desc: "Open Monday–Saturday 9:30 AM to 8:00 PM. Sundays by appointment. Implant Day every 2nd Sunday.",
   },
 ];
 

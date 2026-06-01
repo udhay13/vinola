@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import AppointmentCTA from "@/components/AppointmentCTA";
-import { CheckCircle, Clock, FileText, Shield } from "lucide-react";
+import { CheckCircle, Clock, FileText, Shield, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Patient Information | Vinola Dental Salem",
@@ -10,17 +10,46 @@ export const metadata: Metadata = {
 };
 
 const firstVisitSteps = [
-  { icon: FileText, title: "Complete Your Form", desc: "Arrive 10 minutes early to complete a brief medical history and dental concern form." },
-  { icon: Clock, title: "Consultation & Exam", desc: "Dr. Vinola will review your history, listen to your concerns, and perform a comprehensive oral examination." },
-  { icon: Shield, title: "Treatment Planning", desc: "You will receive a clear, prioritised treatment plan with options, costs, and timelines explained." },
-  { icon: CheckCircle, title: "Begin Your Care", desc: "Simple treatments may begin at the first visit. Larger procedures will be scheduled for convenience." },
+  { icon: FileText, title: "Complete Consent Form", desc: "On your first visit, you will be asked to complete a consent form covering your dental concerns and medical background." },
+  { icon: Clock, title: "Consultation & Exam", desc: "Dr. Vinola will review your concerns and perform a comprehensive oral examination, discussing findings with you clearly." },
+  { icon: Shield, title: "Treatment Planning", desc: "You will receive a clear, prioritised treatment plan with options and timelines explained in detail." },
+  { icon: CheckCircle, title: "Begin Your Care", desc: "Simple treatments may begin at the first visit. Larger procedures will be scheduled at your convenience." },
 ];
 
 const policies = [
-  { title: "Appointment Policy", points: ["Please arrive 5–10 minutes before your scheduled time", "24-hour notice is required for cancellations to avoid a cancellation fee", "Repeated no-shows may require prepayment for future bookings"] },
-  { title: "Payment Policy", points: ["Payment is due at the time of service", "We accept cash, UPI, and card payments", "EMI options are available for treatments above ₹5,000"] },
-  { title: "Medical History", points: ["Please inform us of all medications, allergies, and medical conditions", "Update your medical history at each visit if there are changes", "Your information is kept strictly confidential"] },
-  { title: "Children & Companions", points: ["Parents/guardians must be present for all minors", "One companion is welcome during consultations", "Children not being treated should be supervised in the waiting area"] },
+  {
+    title: "Appointment Policy",
+    points: [
+      "Please arrive 5–10 minutes before your scheduled time",
+      "Walk-ins are welcome but scheduled appointments get priority",
+      "Repeated no-shows may require prepayment for future bookings",
+    ],
+  },
+  {
+    title: "Payment Policy",
+    points: [
+      "Payment is due at the time of service",
+      "We accept cash, UPI, and card payments",
+      "EMI options available for Invisalign treatments",
+      "Gmoney financing is available — ask our front desk",
+    ],
+  },
+  {
+    title: "Medical History",
+    points: [
+      "Please inform us of all medications, allergies, and medical conditions",
+      "Update your medical history at each visit if there are changes",
+      "Your information is kept strictly confidential",
+    ],
+  },
+  {
+    title: "Children & Companions",
+    points: [
+      "Parents/guardians must be present for all minors",
+      "One companion is welcome during consultations",
+      "Children not being treated should be supervised in the waiting area",
+    ],
+  },
 ];
 
 export default function PatientInformationPage() {
@@ -71,7 +100,13 @@ export default function PatientInformationPage() {
             What to <span className="text-gradient">Bring</span>
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
-            {["Government ID for registration", "Previous dental records or X-rays (if any)", "List of current medications", "Insurance details (if applicable)", "List of known allergies", "Any referral letters from other doctors"].map((item) => (
+            {[
+              "Previous dental records or X-rays (if any)",
+              "List of current medications",
+              "List of known allergies",
+              "Any referral letters from other doctors",
+              "Insurance details (if applicable)",
+            ].map((item) => (
               <div key={item} className="flex items-start gap-3 text-sm text-[#374151]">
                 <CheckCircle className="w-5 h-5 text-[#2CB1BC] flex-shrink-0 mt-0.5" />
                 <span>{item}</span>
@@ -112,6 +147,18 @@ export default function PatientInformationPage() {
               Book an Appointment
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Contact callout */}
+      <section className="py-12" style={{ background: "linear-gradient(135deg, #F8FFFE 0%, #E6F7F8 100%)" }}>
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-[#6B7280] mb-4 text-sm">Have questions before your visit? We&apos;re happy to help.</p>
+          <a href="tel:04274972266"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-[#2CB1BC] text-[#2CB1BC] font-semibold hover:bg-[#E6F7F8] transition-all">
+            <Phone className="w-4 h-4" />
+            Call 0427 4972266
+          </a>
         </div>
       </section>
 

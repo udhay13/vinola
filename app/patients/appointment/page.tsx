@@ -16,6 +16,23 @@ export default function AppointmentPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const to = "vinoladental@gmail.com";
+    const subject = encodeURIComponent(`[Appointment Request] ${form.service || "General Enquiry"} – ${form.name}`);
+    const body = encodeURIComponent(
+      `APPOINTMENT REQUEST\n` +
+      `═══════════════════════════\n` +
+      `Name        : ${form.name}\n` +
+      `Phone       : ${form.phone}\n` +
+      `Email       : ${form.email || "Not provided"}\n` +
+      `Service     : ${form.service}\n` +
+      `Preferred Date : ${form.date || "Not specified"}\n` +
+      `Preferred Time : ${form.time || "Not specified"}\n` +
+      `═══════════════════════════\n` +
+      `Additional Notes:\n${form.message || "None"}`
+    );
+
+    window.open(`mailto:${to}?subject=${subject}&body=${body}`, "_blank");
     setSubmitted(true);
   };
 
@@ -69,8 +86,8 @@ export default function AppointmentPage() {
                 <div>
                   <div className="text-sm font-medium text-[#1F2937] mb-2">Clinic Hours</div>
                   <div className="space-y-1 text-xs text-[#6B7280]">
-                    <div className="flex justify-between gap-6"><span>Mon – Sat</span><span className="font-medium text-[#374151]">9:00 AM – 8:00 PM</span></div>
-                    <div className="flex justify-between gap-6"><span>Sunday</span><span className="font-medium text-[#374151]">10:00 AM – 2:00 PM</span></div>
+                    <div className="flex justify-between gap-6"><span>Mon – Sat</span><span className="font-medium text-[#374151]">9:30 AM – 8:00 PM</span></div>
+                    <div className="flex justify-between gap-6"><span>Sunday</span><span className="font-medium text-[#374151]">By Appointment</span></div>
                   </div>
                 </div>
               </div>

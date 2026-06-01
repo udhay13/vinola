@@ -10,6 +10,16 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const to = "vinoladental@gmail.com";
+    const subject = encodeURIComponent(
+      form.subject ? `[Website Enquiry] ${form.subject}` : "[Website Enquiry] Contact Form Submission"
+    );
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+    );
+
+    window.open(`mailto:${to}?subject=${subject}&body=${body}`, "_blank");
     setSubmitted(true);
   };
 
@@ -47,7 +57,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-bold text-[#1F2937] mb-1">Clinic Address</div>
-                      <div className="text-sm text-[#6B7280]">123 Omalur Road, Hasthampatti<br />Salem, Tamil Nadu 636007</div>
+                      <div className="text-sm text-[#6B7280]">No.40, Brindavan Road, 5th Cross<br />Fairlands, Salem, Tamil Nadu</div>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -67,7 +77,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-bold text-[#1F2937] mb-1">Email Address</div>
-                      <a href="mailto:info@vinoladental.com" className="text-sm text-[#2CB1BC] hover:underline">info@vinoladental.com</a>
+                      <a href="mailto:vinoladental@gmail.com" className="text-sm text-[#2CB1BC] hover:underline">vinoladental@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -76,9 +86,12 @@ export default function ContactPage() {
                     </div>
                     <div className="w-full">
                       <div className="font-bold text-[#1F2937] mb-2">Operating Hours</div>
-                      <div className="space-y-1 text-sm text-[#6B7280]">
-                        <div className="flex justify-between max-w-[200px]"><span>Monday – Saturday</span><span className="font-medium text-[#374151]">9AM – 8PM</span></div>
-                        <div className="flex justify-between max-w-[200px]"><span>Sunday</span><span className="font-medium text-[#374151]">10AM – 2PM</span></div>
+                      <div className="space-y-1.5 text-sm text-[#6B7280]">
+                        <div className="flex justify-between gap-4"><span>Monday – Saturday</span><span className="font-medium text-[#374151]">9:30 AM – 8:00 PM</span></div>
+                        <div className="flex justify-between gap-4"><span>Sunday</span><span className="font-medium text-[#374151]">By Appointment Only</span></div>
+                        <div className="mt-2 text-xs px-2 py-1 rounded-lg" style={{ background: "rgba(44,177,188,0.08)", color: "#2CB1BC" }}>
+                          🦷 2nd Sunday of every month — <span className="font-semibold">Implant Day</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -149,7 +162,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="h-[400px] w-full bg-gray-100 relative">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15632.417255140683!2d78.14088925!3d11.6661118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1c3fcd8d8cb%3A0xc68297b8fef88031!2sHasthampatti%2C%20Salem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713426173000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.2!2d78.1485!3d11.6745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1c3fcd8d8cb%3A0xabc123!2sFairlands%2C%20Salem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713426173000!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}

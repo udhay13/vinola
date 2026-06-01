@@ -5,18 +5,29 @@ import AppointmentCTA from "@/components/AppointmentCTA";
 
 export const metadata: Metadata = {
   title: "FAQs | Frequently Asked Questions | Vinola Dental Salem",
-  description: "Answers to common questions about dental treatments, appointments, costs, and care at Vinola Dental in Salem.",
+  description: "Answers to common questions about dental treatments, appointments, costs, anxiety and care at Vinola Dental in Salem.",
 };
 
 const faqCategories = [
   {
     category: "General Questions",
     faqs: [
-      { q: "Where is Vinola Dental located?", a: "We are located at 123 Omalur Road, Hasthampatti, Salem – 636007, Tamil Nadu." },
-      { q: "What are the clinic hours?", a: "We are open Monday to Saturday from 9:00 AM to 8:00 PM and Sunday from 10:00 AM to 2:00 PM." },
+      { q: "Where is Vinola Dental located?", a: "We are located at No.40, Brindavan Road, 5th Cross, Fairlands, Salem, Tamil Nadu." },
+      { q: "What are the clinic hours?", a: "We are open Monday to Saturday from 9:30 AM to 8:00 PM. Sundays are by appointment only. The 2nd Sunday of every month is our dedicated Implant Day." },
       { q: "How do I book an appointment?", a: "You can book online via our appointment page, call us at 0427 4972266, or WhatsApp us at +91 94437 35505." },
       { q: "Does the clinic accept walk-ins?", a: "Yes — walk-ins are welcome for minor concerns and emergencies. However, scheduled appointments get priority." },
-      { q: "Do you treat patients of all ages?", a: "Absolutely. We provide care for children, adults, and seniors — the entire family under one roof." },
+      { q: "Do you treat patients of all ages?", a: "Absolutely. We are a family-friendly clinic providing care for newborns, toddlers, teens, adults, and senior patients — the entire family under one roof." },
+    ],
+  },
+  {
+    category: "Dental Anxiety & Comfort",
+    faqs: [
+      {
+        q: "Will the treatment be painful? I am very scared of the dentist.",
+        a: "We completely understand dental anxiety — it is very common and you are not alone. At Vinola Dental, we offer conscious sedation as an option to help anxious patients feel calm and deeply relaxed throughout their treatment. Our entire team is trained in gentle dentistry techniques to ensure a stress-free, comfortable experience. Please let us know at the time of booking so we can prepare accordingly.",
+      },
+      { q: "How do you manage dental anxiety in children?", a: "Dr. Mehavarshini, our pediatric dental specialist, uses proven behaviour management techniques including tell-show-do, positive reinforcement, and a child-friendly clinical environment to help children feel safe and comfortable during their visit." },
+      { q: "What is conscious sedation?", a: "Conscious sedation is a safe, controlled technique where medication is used to help you feel deeply relaxed while remaining awake and able to respond. It significantly reduces anxiety and discomfort, making dental procedures far more manageable for nervous patients." },
     ],
   },
   {
@@ -31,23 +42,23 @@ const faqCategories = [
     category: "Orthodontics",
     faqs: [
       { q: "Am I too old for braces?", a: "Not at all. Orthodontic treatment is effective at any age. Many of our adult patients achieve excellent results with braces or aligners." },
-      { q: "Are clear aligners more expensive than braces?", a: "Clear aligners are generally more expensive than metal braces due to the fabrication technology involved. We explain all cost options during your consultation." },
+      { q: "Are clear aligners more expensive than braces?", a: "Clear aligners are generally more expensive than metal braces due to the fabrication technology involved. We explain all cost options during your consultation. EMI options are available for Invisalign." },
       { q: "How do I care for my teeth with braces?", a: "Brush carefully after every meal, use interdental brushes, and avoid hard or sticky foods. We provide a detailed care guide at fitting." },
     ],
   },
   {
     category: "Implants & Surgery",
     faqs: [
-      { q: "Am I a good candidate for dental implants?", a: "Most adults with healthy gums and adequate bone are candidates. A clinical assessment including X-rays determines suitability." },
+      { q: "Am I a good candidate for dental implants?", a: "Most adults with healthy gums and adequate bone are candidates. A clinical assessment including X-rays determines suitability. We hold a dedicated Implant Day on the 2nd Sunday of every month." },
       { q: "How long does implant treatment take?", a: "From placement to final crown, the process typically takes 3–6 months including the healing phase." },
       { q: "Is wisdom tooth removal always surgical?", a: "Not always. Fully erupted wisdom teeth can be removed simply. Impacted teeth require a minor surgical procedure — which we perform under local anaesthesia." },
     ],
   },
   {
-    category: "Payments & Insurance",
+    category: "Payments",
     faqs: [
       { q: "Do you accept insurance?", a: "We don't directly process insurance claims, but we provide itemised cost records that you can submit to your insurer for reimbursement." },
-      { q: "Is EMI available for large treatments?", a: "Yes — EMI options are available for treatments above ₹5,000. Speak to our front desk for available plans." },
+      { q: "Is EMI available for large treatments?", a: "Yes — EMI options are available. We offer Gmoney financing as well as EMI plans for Invisalign treatments. Speak to our front desk for available plans." },
       { q: "What payment methods do you accept?", a: "Cash, UPI (PhonePe, GPay, Paytm), debit/credit cards, and bank transfers are all accepted." },
     ],
   },
@@ -60,7 +71,7 @@ export default function FAQsPage() {
         badge="FAQs"
         title="Questions,"
         titleHighlight="Answered"
-        subtitle="Everything you may want to know about dental treatments, appointments, payments, and care at Vinola Dental."
+        subtitle="Everything you may want to know about dental treatments, appointments, anxiety, payments, and care at Vinola Dental."
         breadcrumbs={[{ label: "Patients", href: "/patients/information" }, { label: "FAQs" }]}
       />
 

@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -45,10 +42,10 @@ const servicesList = [
 ];
 
 const legal = [
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Terms & Conditions", href: "/terms" },
-  { label: "Refund & Cancellation", href: "/refund-policy" },
-  { label: "Medical Disclaimer", href: "/disclaimer" },
+  { label: "Privacy Policy", href: "/legal/privacy" },
+  { label: "Terms & Conditions", href: "/legal/terms" },
+  { label: "Refund & Cancellation", href: "/legal/refund-policy" },
+  { label: "Medical Disclaimer", href: "/legal/disclaimer" },
 ];
 
 const socialLinks = [
@@ -58,16 +55,6 @@ const socialLinks = [
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleNewsletter = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      setEmail("");
-    }
-  };
 
   return (
     <footer className="bg-[#1F2937] text-white" role="contentinfo">
@@ -95,7 +82,7 @@ export default function Footer() {
             <div className="space-y-2.5">
               <div className="flex items-start gap-2.5 text-sm text-gray-400">
                 <MapPin className="w-4 h-4 text-[#2CB1BC] flex-shrink-0 mt-0.5" />
-                <span>123 Omalur Road, Hasthampatti, Salem – 636007</span>
+                <span>No.40, Brindavan Road, 5th Cross, Fairlands, Salem</span>
               </div>
               <div className="flex flex-col gap-1.5 text-sm text-gray-400">
                 <div className="flex items-center gap-2.5">
@@ -108,7 +95,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5 text-sm text-gray-400">
                 <Mail className="w-4 h-4 text-[#2CB1BC] flex-shrink-0" />
-                <a href="mailto:drvinola@gmail.com" className="hover:text-[#2CB1BC] transition-colors">drvinola@gmail.com</a>
+                <a href="mailto:vinoladental@gmail.com" className="hover:text-[#2CB1BC] transition-colors">vinoladental@gmail.com</a>
               </div>
             </div>
 
@@ -167,58 +154,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal + Newsletter */}
-          <div className="space-y-7">
-            {/* Legal */}
-            <div>
-              <h3 className="font-bold text-white mb-5 text-sm tracking-wide uppercase"
-                style={{ fontFamily: "var(--font-poppins)" }}>Legal</h3>
-              <ul className="space-y-3" aria-label="Legal links">
-                {legal.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-gray-400 hover:text-[#2CB1BC] transition-colors flex items-center gap-1.5 group"
-                    >
-                      <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Newsletter */}
-            <div>
-              <h3 className="font-bold text-white mb-3 text-sm tracking-wide uppercase"
-                style={{ fontFamily: "var(--font-poppins)" }}>Stay Connected</h3>
-              <p className="text-xs text-gray-400 mb-3">Get dental tips and appointment reminders.</p>
-              {subscribed ? (
-                <div className="flex items-center gap-2 text-sm text-[#2CB1BC]">
-                  <span>✓</span> Thanks for subscribing!
-                </div>
-              ) : (
-                <form onSubmit={handleNewsletter} className="flex gap-2">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Your email"
-                    aria-label="Newsletter email subscription"
-                    required
-                    className="flex-1 px-3 py-2.5 rounded-lg bg-white/10 border border-white/10 text-sm text-white placeholder-gray-500 outline-none focus:border-[#2CB1BC] transition-colors"
-                  />
-                  <button
-                    type="submit"
-                    aria-label="Subscribe to newsletter"
-                    className="px-3 py-2.5 rounded-lg text-white transition-colors"
-                    style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)" }}
+          {/* Legal */}
+          <div>
+            <h3 className="font-bold text-white mb-5 text-sm tracking-wide uppercase"
+              style={{ fontFamily: "var(--font-poppins)" }}>Legal</h3>
+            <ul className="space-y-3" aria-label="Legal links">
+              {legal.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-400 hover:text-[#2CB1BC] transition-colors flex items-center gap-1.5 group"
                   >
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
-                </form>
-              )}
-            </div>
+                    <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
