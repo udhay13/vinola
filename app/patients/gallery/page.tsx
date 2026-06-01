@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 };
 
 const transformations = [
-  { before: "/smile1.png", after: "/smile2.png", label: "Teeth Whitening", desc: "6 shades brighter with professional in-clinic whitening." },
-  { before: "/smile2.png", after: "/smile3.png", label: "Dental Veneers", desc: "Chipped and discoloured teeth restored to a uniform, radiant smile." },
-  { before: "/smile3.png", after: "/smile1.png", label: "Orthodontic Alignment", desc: "18 months of ceramic braces corrected crowding and spacing." },
-  { before: "/smile1.png", after: "/smile3.png", label: "Full Smile Makeover", desc: "Combination of whitening, composites, and contouring for total transformation." },
-  { before: "/smile2.png", after: "/smile1.png", label: "Composite Bonding", desc: "Chips and gaps corrected with bonding in a single visit." },
-  { before: "/smile3.png", after: "/smile2.png", label: "Crown & Bridge", desc: "Missing tooth replaced and adjacent teeth strengthened with a ceramic bridge." },
+  { image: "/teeth-before-after-whitening.webp", label: "Teeth Whitening", desc: "6 shades brighter with professional in-clinic whitening." },
+  { image: "/dental veneers.jpg", label: "Dental Veneers", desc: "Chipped and discoloured teeth restored to a uniform, radiant smile." },
+  { image: "/ortho.png", label: "Orthodontic Alignment", desc: "18 months of ceramic braces corrected crowding and spacing." },
+  { image: "/smile makeover.jpg", label: "Full Smile Makeover", desc: "Combination of whitening, composites, and contouring for total transformation." },
+  { image: "/dental bonding.jpg", label: "Composite Bonding", desc: "Chips and gaps corrected with bonding in a single visit." },
+  { image: "/crown.jpg", label: "Crown & Bridge", desc: "Missing tooth replaced and adjacent teeth strengthened with a ceramic bridge." },
 ];
 
 export default function BeforeAfterGalleryPage() {
@@ -33,17 +33,17 @@ export default function BeforeAfterGalleryPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {transformations.map(({ before, after, label, desc }) => (
+            {transformations.map(({ image, label, desc }) => (
               <div key={label} className="rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 group">
-                {/* Before / After images */}
-                <div className="grid grid-cols-2 gap-0.5 bg-gray-100">
-                  <div className="relative">
-                    <Image src={before} alt={`Before ${label}`} width={240} height={200} className="w-full h-48 object-cover object-top" />
-                    <div className="absolute bottom-2 left-2 px-2 py-0.5 rounded text-xs font-medium text-white" style={{ background: "rgba(31,41,55,0.85)" }}>Before</div>
-                  </div>
-                  <div className="relative">
-                    <Image src={after} alt={`After ${label}`} width={240} height={200} className="w-full h-48 object-cover object-top" />
-                    <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded text-xs font-medium text-white" style={{ background: "rgba(44,177,188,0.9)" }}>After</div>
+                <div className="p-4 bg-gray-50">
+                  <div className="relative overflow-hidden rounded-xl">
+                    <Image
+                      src={image}
+                      alt={`${label} before and after`}
+                      width={480}
+                      height={320}
+                      className="w-full h-52 sm:h-56 object-contain rounded-xl"
+                    />
                   </div>
                 </div>
                 <div className="p-5 bg-white">
