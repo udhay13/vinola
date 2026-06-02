@@ -5,12 +5,12 @@ import { useRef } from "react";
 import Image from "next/image";
 
 const gallery = [
-  { src: "/smile1.png", alt: "Patient smile transformation 1 at Vinola Dental" },
-  { src: "/smile2.png", alt: "Patient smile transformation 2 at Vinola Dental" },
-  { src: "/smile3.png", alt: "Patient smile transformation 3 at Vinola Dental" },
-  { src: "/hero-patient.png", alt: "Happy patient at Vinola Dental" },
-  { src: "/family.png", alt: "Family dental care at Vinola Dental" },
-  { src: "/smile1.png", alt: "Smile makeover result at Vinola Dental" },
+  { src: "/gallery_011.png", alt: "Brushed 2x Still Smelly? — Dental hygiene tips by Vinola Dental" },
+  { src: "/gallery_012.png", alt: "Brushing Isn't Enough — Oral care advice by Dr. Vinola" },
+  { src: "/gallery_013.png", alt: "Clip-in Veneers vs Permanent Solution — Vinola Dental" },
+  { src: "/gallery_014.png", alt: "Fitness and Dental Risk — Health tips by Vinola Dental" },
+  { src: "/gallery_015.png", alt: "Don't Blame the Gum — Gum care awareness by Vinola Dental" },
+  { src: "/gallery_016.png", alt: "Braces vs Aligners: Which is Better? — Vinola Dental" },
 ];
 
 export default function GalleryGrid() {
@@ -18,7 +18,7 @@ export default function GalleryGrid() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-20 lg:py-28 bg-white" ref={ref}>
+    <section className="py-20 lg:py-28 bg-white" ref={ref} suppressHydrationWarning>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -49,7 +49,7 @@ export default function GalleryGrid() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="group relative rounded-2xl overflow-hidden aspect-square card-shadow cursor-pointer"
+              className="group relative rounded-2xl overflow-hidden aspect-[3/4] card-shadow cursor-pointer"
             >
               <Image
                 src={item.src}

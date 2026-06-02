@@ -58,6 +58,7 @@ export default function ContactSection() {
       className="py-20 lg:py-28"
       style={{ background: "linear-gradient(135deg, #F8FFFE 0%, #E6F7F8 100%)" }}
       ref={ref}
+      suppressHydrationWarning
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

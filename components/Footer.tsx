@@ -41,12 +41,7 @@ const servicesList = [
   { label: "Smile Makeover", href: "/services/smile-makeover" },
 ];
 
-const legal = [
-  { label: "Privacy Policy", href: "/legal/privacy" },
-  { label: "Terms & Conditions", href: "/legal/terms" },
-  { label: "Refund & Cancellation", href: "/legal/refund-policy" },
-  { label: "Medical Disclaimer", href: "/legal/disclaimer" },
-];
+
 
 const socialLinks = [
   { Icon: InstagramIcon, href: "https://www.instagram.com/vinoladental/", label: "Instagram" },
@@ -60,7 +55,7 @@ export default function Footer() {
     <footer className="bg-[#1F2937] text-white" role="contentinfo">
       {/* Main footer content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* Brand column */}
           <div className="space-y-5 lg:col-span-1">
@@ -154,24 +149,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
-          <div>
-            <h3 className="font-bold text-white mb-5 text-sm tracking-wide uppercase"
-              style={{ fontFamily: "var(--font-poppins)" }}>Legal</h3>
-            <ul className="space-y-3" aria-label="Legal links">
-              {legal.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-400 hover:text-[#2CB1BC] transition-colors flex items-center gap-1.5 group"
-                  >
-                    <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+
         </div>
       </div>
 

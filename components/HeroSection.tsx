@@ -46,6 +46,7 @@ export default function HeroSection() {
          Desktop (lg): h-screen + items-center for the split layout. */
       className="relative min-h-screen lg:h-screen flex items-start lg:items-center overflow-hidden"
       style={{ background: "linear-gradient(135deg, #F8FFFE 0%, #E6F7F8 50%, #F0FDFE 100%)" }}
+      suppressHydrationWarning
     >
       {/* Background blob shapes */}
       <div
@@ -163,15 +164,15 @@ export default function HeroSection() {
               className="mt-8 flex justify-center lg:hidden w-full"
             >
               <div className="relative w-full max-w-[280px]">
-                <div className="relative w-full aspect-[4/4] rounded-3xl overflow-hidden card-shadow">
+                <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden card-shadow">
                   <Image
-                    src="/hero-patient.png"
-                    alt="Patient with beautiful smile at Vinola Dental"
+                    src="/017.png"
+                    alt="Dental treatment at Vinola Dental Salem"
                     fill
                     priority
                     sizes="(max-width: 1024px) 280px, 0px"
                     className="object-cover"
-                    style={{ objectPosition: "top" }}
+                    style={{ objectPosition: "center" }}
                   />
                 </div>
 
@@ -224,7 +225,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="hidden lg:flex relative justify-center"
           >
-            <div className="relative w-full max-w-[420px]">
+            <div className="relative w-full max-w-[500px]">
               {/* Decorative ring */}
               <div
                 className="absolute inset-0 rounded-3xl"
@@ -235,12 +236,12 @@ export default function HeroSection() {
               />
               <div className="relative rounded-3xl overflow-hidden card-shadow">
                 <Image
-                  src="/hero-patient.png"
-                  alt="Patient with beautiful smile at Vinola Dental"
-                  width={420}
-                  height={460}
+                  src="/017.png"
+                  alt="Dental treatment at Vinola Dental Salem"
+                  width={520}
+                  height={390}
                   className="w-full h-auto object-cover"
-                  style={{ maxHeight: "calc(100vh - 160px)" }}
+                  style={{ objectPosition: "center" }}
                   priority
                 />
               </div>

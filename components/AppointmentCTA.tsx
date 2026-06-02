@@ -14,6 +14,7 @@ export default function AppointmentCTA() {
       className="py-20 lg:py-28 relative overflow-hidden"
       ref={ref}
       style={{ background: "linear-gradient(135deg, #1F8A94 0%, #2CB1BC 50%, #3ECFDB 100%)" }}
+      suppressHydrationWarning
     >
       {/* Decorative circles */}
       <div className="absolute -top-16 -left-16 w-64 h-64 rounded-full border-4 border-white/10" />

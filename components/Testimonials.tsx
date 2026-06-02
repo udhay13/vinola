@@ -74,6 +74,7 @@ export default function Testimonials() {
       className="py-20 lg:py-28 relative overflow-hidden"
       style={{ background: "linear-gradient(135deg, #F8FFFE 0%, #E6F7F8 100%)" }}
       ref={ref}
+      suppressHydrationWarning
     >
       {/* Blob */}
       <div
