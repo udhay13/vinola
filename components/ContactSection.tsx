@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    lines: ["Vinola Dental Clinic", "123 Omalur Road, Hasthampatti", "Salem – 636007, Tamil Nadu"],
+    lines: ["Vinola Dental Clinic", "No.40, Brindavan Road, 5th Cross", "Fairlands, Salem, Tamil Nadu"],
   },
   {
     icon: Phone,
@@ -29,7 +29,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    lines: ["drvinola@gmail.com"],
+    lines: ["vinoladental@gmail.com"],
   },
   {
     icon: Clock,
