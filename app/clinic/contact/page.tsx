@@ -162,7 +162,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="h-[400px] w-full bg-gray-100 relative">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.2!2d78.1485!3d11.6745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1c3fcd8d8cb%3A0xabc123!2sFairlands%2C%20Salem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713426173000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.1837583648083!2d78.1408892!3d11.6738734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf04f7d0c867f%3A0x9c162f7424a37aea!2sVinola%20Dental!5e0!3m2!1sen!2sin!4v1713426173000!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
