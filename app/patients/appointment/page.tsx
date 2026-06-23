@@ -111,25 +111,25 @@ export default function AppointmentPage() {
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="appt-name">Full Name *</label>
                       <input id="appt-name" name="name" required value={form.name} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
                         placeholder="Your full name" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="appt-phone">Phone Number *</label>
                       <input id="appt-phone" name="phone" required type="tel" value={form.phone} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
                         placeholder="+91 or 0427..." />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="appt-email">Email Address</label>
                       <input id="appt-email" name="email" type="email" value={form.email} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
                         placeholder="your@email.com" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="appt-service">Service Required *</label>
                       <select id="appt-service" name="service" required value={form.service} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors bg-white">
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors bg-white">
                         <option value="">Select a service</option>
                         {services.map((s) => <option key={s} value={s}>{s}</option>)}
                       </select>
@@ -137,12 +137,12 @@ export default function AppointmentPage() {
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="appt-date">Preferred Date</label>
                       <input id="appt-date" name="date" type="date" value={form.date} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors" />
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="appt-time">Preferred Time</label>
                       <select id="appt-time" name="time" value={form.time} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors bg-white">
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors bg-white">
                         <option value="">Select a time slot</option>
                         <option>Morning (9AM – 12PM)</option>
                         <option>Afternoon (12PM – 4PM)</option>
@@ -153,7 +153,7 @@ export default function AppointmentPage() {
                   <div>
                     <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="appt-message">Additional Notes</label>
                     <textarea id="appt-message" name="message" rows={4} value={form.message} onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors resize-none"
                       placeholder="Describe your concern, symptoms, or any relevant details..." />
                   </div>
                   <button type="submit"

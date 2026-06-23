@@ -117,32 +117,32 @@ export default function ContactPage() {
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="name">Full Name *</label>
                       <input id="name" name="name" required value={form.name} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
                         placeholder="Your full name" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="phone">Phone Number *</label>
                       <input id="phone" name="phone" required type="tel" value={form.phone} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
                         placeholder="+91 or 0427..." />
                     </div>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="email">Email Address</label>
                     <input id="email" name="email" type="email" value={form.email} onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
                       placeholder="your@email.com" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="subject">Subject</label>
                     <input id="subject" name="subject" value={form.subject} onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors"
                       placeholder="How can we help you?" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[#374151] mb-1.5" htmlFor="message">Your Message *</label>
                     <textarea id="message" name="message" required rows={4} value={form.message} onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-base sm:text-sm text-[#1F2937] outline-none focus:border-[#2CB1BC] transition-colors resize-none"
                       placeholder="Type your message here..." />
                   </div>
                   <button type="submit"

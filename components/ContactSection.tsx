@@ -162,7 +162,7 @@ export default function ContactSection() {
                         placeholder="Your full name"
                         aria-required="true"
                         {...register("name", { required: "Name is required" })}
-                        className={`w-full px-4 py-3 rounded-xl border text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] ${
+                        className={`w-full px-4 py-3 rounded-xl border text-base sm:text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] ${
                           errors.name ? "border-red-400 bg-red-50" : "border-[#E5E7EB] bg-[#F9FAFB]"
                         }`}
                       />
@@ -184,7 +184,7 @@ export default function ContactSection() {
                           required: "Phone number is required",
                           pattern: { value: /^[0-9+\-\s]{10,}$/, message: "Enter a valid phone number" },
                         })}
-                        className={`w-full px-4 py-3 rounded-xl border text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] ${
+                        className={`w-full px-4 py-3 rounded-xl border text-base sm:text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] ${
                           errors.phone ? "border-red-400 bg-red-50" : "border-[#E5E7EB] bg-[#F9FAFB]"
                         }`}
                       />
@@ -205,7 +205,7 @@ export default function ContactSection() {
                       {...register("email", {
                         pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Enter a valid email" },
                       })}
-                      className={`w-full px-4 py-3 rounded-xl border text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] ${
+                      className={`w-full px-4 py-3 rounded-xl border text-base sm:text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] ${
                         errors.email ? "border-red-400 bg-red-50" : "border-[#E5E7EB] bg-[#F9FAFB]"
                       }`}
                     />
@@ -221,7 +221,7 @@ export default function ContactSection() {
                     <select
                       id="service"
                       {...register("service")}
-                      className="w-full px-4 py-3 rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] text-sm text-[#1F2937] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC]"
+                      className="w-full px-4 py-3 rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] text-base sm:text-sm text-[#1F2937] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC]"
                     >
                       <option value="">Select a service</option>
                       {navServiceLinks.map((service) => (
@@ -241,7 +241,7 @@ export default function ContactSection() {
                       rows={4}
                       placeholder="Tell us about your dental concern or query..."
                       {...register("message")}
-                      className="w-full px-4 py-3 rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] text-base sm:text-sm text-[#1F2937] placeholder-[#9CA3AF] transition-all duration-200 outline-none focus:ring-2 focus:ring-[#2CB1BC]/20 focus:border-[#2CB1BC] resize-none"
                     />
                   </div>
 
