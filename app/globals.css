@@ -79,22 +79,36 @@
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #2CB1BC;
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #1F8A94;
 }
 
 /* Pulse animation for CTA */
 @keyframes pulse-ring {
-  0% { transform: scale(1); opacity: 1; }
-  70% { transform: scale(1.15); opacity: 0; }
-  100% { transform: scale(1.15); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  70% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
 }
 
 .pulse-btn::before {
@@ -109,8 +123,15 @@
 
 /* Float animation */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .float-anim {

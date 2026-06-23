@@ -26,7 +26,7 @@ const faqCategories = [
         q: "Will the treatment be painful? I am very scared of the dentist.",
         a: "We completely understand dental anxiety — it is very common and you are not alone. At Vinola Dental, we offer conscious sedation as an option to help anxious patients feel calm and deeply relaxed throughout their treatment. Our entire team is trained in gentle dentistry techniques to ensure a stress-free, comfortable experience. Please let us know at the time of booking so we can prepare accordingly.",
       },
-      { q: "How do you manage dental anxiety in children?", a: "Dr. Mehavarshini, our pediatric dental specialist, uses proven behaviour management techniques including tell-show-do, positive reinforcement, and a child-friendly clinical environment to help children feel safe and comfortable during their visit." },
+      { q: "How do you manage dental anxiety in children?", a: "Dr. Vinola, our Chief Consultant and Pediatric Dental Surgeon, uses a child-friendly clinical environment along with proven distraction techniques to help children feel safe, comfortable, and anxiety-free during their visit." },
       { q: "What is conscious sedation?", a: "Conscious sedation is a safe, controlled technique where medication is used to help you feel deeply relaxed while remaining awake and able to respond. It significantly reduces anxiety and discomfort, making dental procedures far more manageable for nervous patients." },
     ],
   },

@@ -41,20 +41,19 @@ export default function DoctorPage() {
       {/* Doctor Profile */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16 items-start max-w-5xl mx-auto">
 
             {/* Image */}
             <div className="relative flex justify-center">
-              <div className="relative w-full max-w-[400px]">
+              <div className="relative w-full max-w-[340px]">
                 <div className="absolute -bottom-6 -right-6 w-full h-full rounded-3xl"
                   style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)", opacity: 0.12 }} />
-                <div className="relative rounded-3xl overflow-hidden card-shadow border-4 border-white">
+                <div className="relative rounded-3xl overflow-hidden card-shadow border-4 border-white aspect-[4/5]">
                   <Image
-                    src="/10.png"
+                    src="/11.png"
                     alt="Dr. Vinola Duraisamy – Chief Consultant at Vinola Dental"
-                    width={400}
-                    height={500}
-                    className="w-full h-auto object-cover"
+                    fill
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 glass rounded-2xl p-4 shadow-lg text-center">
@@ -97,15 +96,6 @@ export default function DoctorPage() {
                   </div>
                 ))}
               </div>
-
-              <Link
-                href="/patients/appointment"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-white font-semibold transition-all duration-300 hover:scale-105 glow-teal-hover"
-                style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)" }}
-              >
-                Book a Consultation
-                <ArrowRight className="w-4 h-4" />
-              </Link>
             </div>
           </div>
         </div>

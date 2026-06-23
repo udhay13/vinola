@@ -36,28 +36,27 @@ export default function AboutDoctor() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16 items-center max-w-5xl mx-auto">
           {/* Left: Doctor Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative flex justify-center lg:justify-start"
+            className="relative flex justify-center"
           >
-            <div className="relative w-full max-w-[420px]">
+            <div className="relative w-full max-w-[340px]">
               {/* Background accent */}
               <div
                 className="absolute -bottom-6 -right-6 w-full h-full rounded-3xl"
                 style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)", opacity: 0.15 }}
               />
               {/* Image frame */}
-              <div className="relative rounded-3xl overflow-hidden card-shadow border-4 border-white">
+              <div className="relative rounded-3xl overflow-hidden card-shadow border-4 border-white aspect-[4/5]">
                 <Image
-                  src="/10.png"
+                  src="/11.png"
                   alt="Dr. Vinola Duraisamy - Lead Dentist at Vinola Dental"
-                  width={420}
-                  height={520}
-                  className="w-full h-auto object-cover"
+                  fill
+                  className="object-cover object-top"
                 />
               </div>
 
@@ -69,7 +68,7 @@ export default function AboutDoctor() {
                 className="absolute -bottom-4 -right-4 glass rounded-2xl p-4 shadow-lg text-center"
               >
                 <div className="text-2xl font-bold text-[#2CB1BC]" style={{ fontFamily: "var(--font-poppins)" }}>26+</div>
-                <div className="text-xs text-[#6B7280] font-medium leading-tight">Years<br/>Experience</div>
+                <div className="text-xs text-[#6B7280] font-medium leading-tight">Years<br />Experience</div>
               </motion.div>
             </div>
           </motion.div>

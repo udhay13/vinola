@@ -51,7 +51,7 @@ export default function ServicesGrid() {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6"
         >
           {landingServicesData.map((service) => {
             const Icon = service.icon;

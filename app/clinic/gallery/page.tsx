@@ -15,42 +15,34 @@ const tourImages = [
   {
     src: "/1.png",
     title: "Clinic Entrance",
-    eyebrow: "Exterior",
     description: "A clear, easy-to-spot clinic frontage with street-level access in Salem.",
-    className: "md:col-span-4 md:row-span-2 aspect-[16/11] md:aspect-auto",
-    objectPosition: "center",
   },
   {
-    src: "/6.png",
+    src: "/ddd.webp",
+    title: "Digital Imaging Suite",
+    description: "Advanced diagnostic equipment including full-mouth digital X-ray capabilities for precise treatment planning.",
+  },
+  {
+    src: "/3.webp",
+    title: "Waiting Lounge",
+    description: "A child-friendly waiting area with engaging activities and comfortable seating.",
+  },
+  {
+    src: "/thhh.webp",
     title: "Treatment Suite",
-    eyebrow: "Operatory",
     description: "A dedicated dental chair setup with chairside instruments and clinical lighting.",
-    className: "md:col-span-2 aspect-[4/3]",
+  },
+  {
+    src: "/4.webp",
+    title: "Pediatric Treatment Room",
+    description: "Colorful, calming treatment rooms thoughtfully designed for children's comfort.",
     objectPosition: "center",
   },
   {
-    src: "/1.png",
-    title: "Signage & Access",
-    eyebrow: "Arrival",
-    description: "Prominent Vinola Dental branding helps patients locate the clinic quickly.",
-    className: "md:col-span-2 aspect-[4/3]",
-    objectPosition: "50% 45%",
-  },
-  {
-    src: "/6.png",
-    title: "Chairside Equipment",
-    eyebrow: "Technology",
-    description: "Organized equipment placement supports efficient and precise dental care.",
-    className: "md:col-span-3 aspect-[16/10]",
-    objectPosition: "62% 58%",
-  },
-  {
-    src: "/6.png",
-    title: "Clinical Workspace",
-    eyebrow: "Planning",
-    description: "A connected workspace for reviewing findings and coordinating treatment.",
-    className: "md:col-span-3 aspect-[16/10]",
-    objectPosition: "78% 38%",
+    src: "/5.webp",
+    title: "Orthodontic Treatment Room",
+    description: "An advanced orthodontic suite equipped with the latest technology.",
+    objectPosition: "center",
   },
 ];
 
@@ -126,33 +118,31 @@ export default function ClinicGalleryPage() {
             </div>
           </div>
 
-          <div className="mt-12 grid md:grid-cols-6 md:auto-rows-[230px] gap-5">
-            {tourImages.map(({ src, title, eyebrow, description, className, objectPosition }) => (
+          {/* Gallery Grid — clean 2-column then 3-column layout */}
+          <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {tourImages.map(({ src, title, description, objectPosition }) => (
               <article
-                key={`${title}-${objectPosition}`}
-                className={`group relative overflow-hidden rounded-3xl border border-gray-100 bg-gray-50 card-shadow ${className}`}
+                key={title}
+                className="group relative overflow-hidden rounded-3xl border border-gray-100 card-shadow aspect-[4/3]"
               >
                 <Image
                   src={src}
                   alt={`${title} at Vinola Dental`}
                   fill
+                  style={{ objectPosition: objectPosition || "center" }}
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  style={{ objectPosition }}
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   priority={title === "Clinic Entrance"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/80 via-[#111827]/10 to-transparent" />
                 <div className="absolute left-5 right-5 bottom-5 text-white">
-                  <div className="mb-2 inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-semibold backdrop-blur">
-                    {eyebrow}
-                  </div>
                   <h3
                     className="text-xl font-bold leading-tight"
                     style={{ fontFamily: "var(--font-poppins)" }}
                   >
                     {title}
                   </h3>
-                  <p className="mt-2 max-w-lg text-sm leading-relaxed text-white/85">{description}</p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-white/85">{description}</p>
                 </div>
               </article>
             ))}

@@ -58,7 +58,7 @@ export const landingServicesData: LandingService[] = [
     ...navServiceLinks[2],
     icon: Smile,
     description:
-      "Braces, aligners, and retainers planned around your bite, lifestyle, and comfort.",
+      "Preventive orthodontic treatment for teens and adults, and removable digital orthodontic appliances.",
     color: "#F59E0B",
     bg: "rgba(245,158,11,0.08)",
   },

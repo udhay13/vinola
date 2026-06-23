@@ -5,11 +5,11 @@ import { useRef } from "react";
 import Image from "next/image";
 
 const gallery = [
-  { src: "/gallery_011.png", alt: "Brushed 2x Still Smelly? — Dental hygiene tips by Vinola Dental" },
+  { src: "/gallery_011.png", alt: "Brushed 2x Still Smelly? — Dental hygiene tips by Vinola Dental", fit: "contain" as const, bg: "#3BA4E0" },
   { src: "/gallery_012.png", alt: "Brushing Isn't Enough — Oral care advice by Dr. Vinola" },
   { src: "/gallery_013.png", alt: "Clip-in Veneers vs Permanent Solution — Vinola Dental" },
   { src: "/gallery_014.png", alt: "Fitness and Dental Risk — Health tips by Vinola Dental" },
-  { src: "/gallery_015.png", alt: "Don't Blame the Gum — Gum care awareness by Vinola Dental" },
+  { src: "/gallery_015.png", alt: "Don't Blame the Gum — Gum care awareness by Vinola Dental", fit: "contain" as const, bg: "#C084FC" },
   { src: "/gallery_016.png", alt: "Braces vs Aligners: Which is Better? — Vinola Dental" },
 ];
 
@@ -50,12 +50,13 @@ export default function GalleryGrid() {
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="group relative rounded-2xl overflow-hidden aspect-[3/4] card-shadow cursor-pointer"
+              style={item.bg ? { backgroundColor: item.bg } : undefined}
             >
               <Image
                 src={item.src}
                 alt={item.alt}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className={`${item.fit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-500 group-hover:scale-110`}
                 sizes="(max-width: 768px) 50vw, 33vw"
               />
               {/* Hover overlay */}

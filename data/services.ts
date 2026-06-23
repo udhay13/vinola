@@ -128,14 +128,14 @@ export const servicesData: ServiceItem[] = [
     icon: Smile,
     title: "Teeth Alignment",
     description:
-      "Progressively correcting teeth from evaluation to routine check-ups, making therapy simple and comfortable.",
+      "Preventive orthodontic treatment for teens and adults, alongside removable digital orthodontic appliances for comfortable alignment.",
     fullDescription:
-      "Achieve the perfect bite and a beautifully straight smile with our Orthodontic solutions. We utilize modern braces and advanced clear aligners tailored to your specific needs. Our guided therapy smoothly transitions you from your first evaluation to routine check-ups, ensuring your alignment journey is simple, comfortable, and highly effective.",
+      "Achieve the perfect bite and a beautifully straight smile with our Orthodontic solutions. We offer preventive orthodontic treatment for teens and adults, utilizing modern braces and removable digital orthodontic appliances tailored to your specific needs. Our guided therapy smoothly transitions you from your first evaluation to routine check-ups.",
     color: "#F59E0B",
     bg: "rgba(245,158,11,0.08)",
     heroImage: "/smile1.png",
     detailImages: ["/doctor.png", "/smile2.png", "/smile3.png"],
-    quickFacts: ["Braces or aligners", "Planned in phases", "Comfort-focused reviews"],
+    quickFacts: ["Braces or digital appliances", "Preventive care", "Comfort-focused reviews"],
     focusAreas: [
       {
         title: "Crowded teeth",
@@ -451,7 +451,7 @@ export const servicesData: ServiceItem[] = [
     bg: "rgba(244,114,182,0.08)",
     heroImage: "/family.png",
     detailImages: ["/doctor.png", "/smile2.png", "/smile3.png"],
-    quickFacts: ["Gentle pediatric care", "Friendly clinic visits", "Parent-guided prevention"],
+    quickFacts: ["Gentle pediatric care", "Invisalign for Kids/Teens", "Parent-guided prevention"],
     focusAreas: [
       {
         title: "First dental visits",
@@ -472,6 +472,11 @@ export const servicesData: ServiceItem[] = [
         title: "Reducing dental fear",
         description:
           "Child-friendly communication helps lower anxiety and build trust over repeated visits.",
+      },
+      {
+        title: "Invisalign for Kids & Teens",
+        description:
+          "Clear aligners designed specifically for growing smiles, offering a comfortable and discreet orthodontic option.",
       },
     ],
     process: [
