@@ -147,7 +147,7 @@ export default function ServiceDetailExperience({
                 className="mt-9 flex flex-col gap-4 sm:flex-row"
               >
                 <Link
-                  href="#contact"
+                  href="/patients/appointment"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl px-7 py-4 text-base font-semibold text-white shadow-xl transition-transform duration-300 hover:scale-[1.02]"
                   style={{
                     background: `linear-gradient(135deg, ${service.color}, #1F2937)`,
@@ -635,7 +635,7 @@ export default function ServiceDetailExperience({
                   faster before they speak with the clinic.
                 </p>
                 <Link
-                  href="#contact"
+                  href="/patients/appointment"
                   className="mt-7 inline-flex items-center gap-2 rounded-2xl px-6 py-3.5 text-base font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]"
                   style={{
                     background: `linear-gradient(135deg, ${service.color}, #1F2937)`,

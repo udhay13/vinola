@@ -61,7 +61,7 @@ export default function AppointmentCTA() {
           {/* CTA Button with pulse */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              href="#contact"
+              href="/patients/appointment"
               id="cta-book-btn"
               className="relative inline-flex items-center gap-2 px-8 py-4 bg-white rounded-2xl text-[#2CB1BC] font-bold text-base transition-all duration-300 hover:scale-105 pulse-btn overflow-hidden shadow-xl"
             >

@@ -252,7 +252,7 @@ export default function ContactSection() {
                     style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)" }}
                   >
                     <Send className="w-4 h-4" />
-                    Send Message & Book Appointment
+                    Book Appointment
                   </button>
 
                   <p className="text-xs text-[#9CA3AF] text-center">

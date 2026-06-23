@@ -26,7 +26,7 @@ export default function MobileStickyCTA() {
           aria-label="Mobile booking button"
         >
           <Link
-            href="#contact"
+            href="/patients/appointment"
             className="flex items-center justify-center gap-2 w-full py-4 rounded-2xl text-white font-bold text-base shadow-2xl"
             style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)" }}
           >

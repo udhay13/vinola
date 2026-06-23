@@ -117,7 +117,7 @@ export default function AboutDoctor() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
-                href="#contact"
+                href="/patients/appointment"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-white font-semibold transition-all duration-300 hover:scale-105 glow-teal-hover"
                 style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)" }}
               >

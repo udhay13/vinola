@@ -138,7 +138,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row gap-3"
             >
               <Link
-                href="#contact"
+                href="/patients/appointment"
                 id="hero-book-btn"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white font-semibold text-sm transition-all duration-300 hover:scale-105 glow-teal-hover shadow-lg"
                 style={{ background: "linear-gradient(135deg, #2CB1BC, #1F8A94)" }}
