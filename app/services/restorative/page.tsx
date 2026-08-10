@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 const treatments = [
+  { title: "Dental Bridges", desc: "A fixed solution that fills gaps left by missing teeth, restoring appearance and bite." },
+  { title: "Complete Dentures", desc: "Replace a full arch of missing teeth with comfortable, natural-looking dentures." },
+  { title: "Partial Dentures", desc: "A removable solution designed to replace missing teeth while preserving your natural smile." },
+  { title: "Dental Implants", desc: "Restore missing teeth with advanced implants for a secure, long-lasting smile." },
+  { title: "Restorations & Fillings", desc: "Repair damaged or decayed teeth to restore their strength, function, and natural appearance." },
   { title: "Dental Crowns", desc: "Custom ceramic caps that restore the strength, shape, and appearance of damaged or weakened teeth." },
-  { title: "Dental Bridges", desc: "Fixed prosthetics that bridge the gap of missing teeth using adjacent teeth as anchors." },
-  { title: "Complete Dentures", desc: "Full-arch removable dentures crafted for comfort, natural appearance, and stable everyday function." },
-  { title: "Partial Dentures", desc: "Removable dental appliances that replace multiple missing teeth while preserving existing natural teeth." },
-  { title: "Inlays", desc: "Custom-fitted restorations placed within the cusps of a tooth to repair moderate cavities or damage." },
-  { title: "Onlays", desc: "Larger restorations covering one or more tooth cusps — an alternative to a full crown when structure allows." },
 ];
 
 const faqs = [
@@ -29,11 +29,11 @@ export default function RestorativePage() {
   return (
     <main className="min-h-screen bg-white">
       <PageHero
-        badge="Restorative Dentistry"
-        title="Restore Function."
-        titleHighlight="Renew Confidence."
-        subtitle="Precision restorations using high-quality materials to bring damaged and missing teeth back to full function and natural beauty."
-        breadcrumbs={[{ label: "Services", href: "/services/general-dentistry" }, { label: "Restorative Dentistry" }]}
+        badge="Prosthetic & Restorative Dentistry"
+        title="Prosthetic"
+        titleHighlight="Solutions"
+        subtitle="Restore missing or damaged teeth with customized prosthetic solutions for improved function and aesthetics. Rebuild your smile with precision, comfort, and long-lasting results."
+        breadcrumbs={[{ label: "Services", href: "/services/general-dentistry" }, { label: "Prosthetic Dentistry" }]}
       />
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

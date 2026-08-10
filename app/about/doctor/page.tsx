@@ -8,17 +8,50 @@ import { CheckCircle, GraduationCap, Award, ArrowRight, Star, Baby, Users, Heart
 export const metadata: Metadata = {
   title: "Meet the Doctor | Dr. Vinola Duraisamy – Vinola Dental Salem",
   description:
-    "Meet Dr. Vinola Duraisamy — BDS, MDS, FICCDE, PGDHM — Chief Consultant at Vinola Dental Salem. A family-friendly clinic for patients from newborns to geriatric care.",
+    "Meet Dr. Vinola Duraisamy — BDS, MDS (Pediatric & Preventive Dentistry), FICCDE, PGDHM, Fellowship in Implantology — Chief Consultant at Vinola Dental Salem.",
 };
 
 const qualifications = [
-  { label: "BDS, MDS, FICCDE", detail: "Bachelor & Master of Dental Surgery · Fellow, Indian College of Conservative Dentistry & Endodontics" },
-  { label: "PGDHM", detail: "Post Graduate Diploma in Hospital Management" },
-  { label: "Fellowship in Implantology", detail: "Advanced Fellowship in Dental Implantology" },
-  { label: "Fellow – Academy of Cosmetic Dentistry of India", detail: "Fellow of Academy of Cosmetic Dentistry of India (FALCDI)" },
-  { label: "Fellow – Special Children Dentistry", detail: "Fellowship in Dental Care for Children with Special Needs" },
-  { label: "Member – Int. Disability & Oral Health", detail: "Member of International Disability & Oral Health Network" },
-  { label: "Member – IAPD", detail: "Member of International Association of Pediatric Dentistry" },
+  {
+    label: "BDS, MDS – Pediatric & Preventive Dentistry",
+    detail: "Bachelor and Masters of Dental Surgery — Rajah Muthiah Dental College and Hospital, Annamalai University",
+  },
+  {
+    label: "FICCDE",
+    detail: "Fellow International College of Continuous Dental Education (Orthodontics)",
+  },
+  {
+    label: "PGDHM",
+    detail: "Post Graduate Diploma in Hospital Management",
+  },
+  {
+    label: "Fellowship in Implantology",
+    detail: "Advanced Fellowship in Dental Implantology",
+  },
+  {
+    label: "Fellow – ACDI",
+    detail: "Fellow of Academy of Cosmetic Dentistry of India, Affiliated to American Academy of Cosmetic Dentistry",
+  },
+  {
+    label: "FSCD",
+    detail: "Fellowship in Special Children Dentistry",
+  },
+  {
+    label: "Member – IADH",
+    detail: "Member of International Disability & Oral Health",
+  },
+  {
+    label: "Member – IAPD",
+    detail: "Member of International Association of Pediatric Dentistry",
+  },
+  {
+    label: "ISPPD",
+    detail: "Indian Society of Paediatric and Preventive Dentistry",
+  },
+  {
+    label: "Member – IDA",
+    detail: "Member of Indian Dental Association",
+  },
 ];
 
 const ageGroups = [
@@ -34,7 +67,7 @@ export default function DoctorPage() {
         badge="Meet the Doctor"
         title="Dr. Vinola"
         titleHighlight="Duraisamy"
-        subtitle="Chief Consultant · BDS, MDS, FICCDE, PGDHM · A family-friendly dental practice welcoming patients from newborns to the elderly in Fairlands, Salem."
+        subtitle="Chief Consultant · BDS, MDS (Pediatric & Preventive Dentistry) · FICCDE · PGDHM · Fellowship in Implantology — dedicated to oral health wellness and specialist-level family care in Salem."
         breadcrumbs={[{ label: "About", href: "/about" }, { label: "Meet the Doctor" }]}
       />
 
@@ -74,13 +107,10 @@ export default function DoctorPage() {
                   Dr. Vinola Duraisamy
                 </h2>
                 <div className="text-sm text-[#6B7280] mb-5">
-                  BDS · MDS · FICCDE · PGDHM · Fellowship in Implantology
+                  BDS · MDS (Pediatric & Preventive Dentistry) · FICCDE · PGDHM · Fellowship in Implantology · Fellow – ACDI
                 </div>
-                <p className="text-[#6B7280] leading-relaxed mb-4">
-                  Dr. Vinola Duraisamy is the Chief Consultant at Vinola Dental, Fairlands, Salem — a <strong className="text-[#1F2937]">family-friendly clinic</strong> welcoming patients across every stage of life, from newborn babies and toddlers to teens, adults, and geriatric patients.
-                </p>
                 <p className="text-[#6B7280] leading-relaxed">
-                  With over 26 years of clinical expertise, she combines specialist-level qualifications with a deeply compassionate, patient-centred approach — ensuring every family member receives care that is precise, gentle, and tailored to their unique needs.
+                  With over <strong className="text-[#1F2937]">26 years of clinical expertise</strong>, Dr. Vinola Duraisamy predominantly focuses on <strong className="text-[#1F2937]">Oral Health Wellness</strong> and combines specialist-level qualifications with a deeply compassionate, patient-centred approach — ensuring every family member receives care that is precise, gentle, and tailored to their unique needs.
                 </p>
               </div>
 
@@ -108,10 +138,10 @@ export default function DoctorPage() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-[#2CB1BC] border border-[#2CB1BC]/30 mb-4"
               style={{ background: "rgba(44,177,188,0.08)" }}>
               <GraduationCap className="w-4 h-4" />
-              Qualifications & Credentials
+              Qualifications &amp; Credentials
             </div>
             <h2 className="text-3xl font-bold text-[#1F2937]" style={{ fontFamily: "var(--font-poppins)" }}>
-              Education & <span className="text-gradient">Credentials</span>
+              Education &amp; <span className="text-gradient">Credentials</span>
             </h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-4">

@@ -23,10 +23,10 @@ export default function BeforeAfterGalleryPage() {
   return (
     <main className="min-h-screen bg-white">
       <PageHero
-        badge="Before & After Gallery"
+        badge="Our Dental Excellence"
         title="Real Results,"
         titleHighlight="Real Smiles"
-        subtitle="Genuine smile transformations achieved at Vinola Dental — cosmetic, restorative, and orthodontic cases showcasing the outcomes we deliver."
+        subtitle="Genuine smile transformations achieved at Vinola Dental — orthodontic, restorative, cosmetic cases and a balanced complete dentistry treatment solution. A go-to gallery showcasing different treatments carried out and the outcomes achieved."
         breadcrumbs={[{ label: "Patients", href: "/patients/information" }, { label: "Before & After" }]}
       />
 

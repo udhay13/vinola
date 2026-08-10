@@ -14,6 +14,9 @@ const treatments = [
   { title: "Fluoride Treatment", desc: "Professional fluoride application to strengthen enamel and protect growing teeth from cavities." },
   { title: "Dental Sealants", desc: "Thin protective coatings applied to back teeth grooves to prevent decay in hard-to-clean areas." },
   { title: "Habit-Breaking Appliances", desc: "Devices to gently help children overcome thumb-sucking or tongue-thrusting habits that affect dental development." },
+  { title: "Preventive Orthodontics", desc: "Encourages proper dental growth and helps avoid complex orthodontic treatment by guiding jaw and tooth development at the right time." },
+  { title: "Pulpectomy / Pulpotomy", desc: "Pulpectomy removes infected pulp from the entire tooth to relieve pain and preserve the primary tooth. Pulpotomy removes infected pulp from the crown of the tooth while preserving the healthy root pulp." },
+  { title: "Crowns", desc: "Custom-made caps that restore weakened teeth and protect them until they naturally fall out. Available in Metal crowns, Stainless Steel crowns, or Zirconia crowns — designed to protect and restore your child's teeth." },
 ];
 
 const faqs = [

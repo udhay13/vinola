@@ -35,6 +35,7 @@ export const navServiceLinks: NavServiceLink[] = [
   { label: "Periodontics", href: "/services/periodontics" },
   { label: "Oral Surgery", href: "/services/oral-surgery" },
   { label: "Smile Makeover", href: "/services/smile-makeover" },
+  { label: "Full Mouth Rehabilitation", href: "/services/full-mouth-rehabilitation" },
 ];
 
 export const landingServicesData: LandingService[] = [
@@ -117,5 +118,13 @@ export const landingServicesData: LandingService[] = [
       "Digitally planned smile transformation combining cosmetic, restorative, and alignment care.",
     color: "#EC4899",
     bg: "rgba(236,72,153,0.08)",
+  },
+  {
+    ...navServiceLinks[10],
+    icon: Layers,
+    description:
+      "A complete multidisciplinary approach prioritizing oral health wellness to create a healthy smile.",
+    color: "#8B5CF6",
+    bg: "rgba(139,92,246,0.08)",
   },
 ];

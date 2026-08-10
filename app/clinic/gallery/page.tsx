@@ -29,19 +29,19 @@ const tourImages = [
   },
   {
     src: "/thhh.webp",
-    title: "Treatment Suite",
-    description: "A dedicated dental chair setup with chairside instruments and clinical lighting.",
+    title: "Consultation Room / Treatment Suite",
+    description: "Comfort-focused treatment spaces designed to help you feel relaxed throughout your visit.",
   },
   {
     src: "/4.webp",
     title: "Pediatric Treatment Room",
-    description: "Colorful, calming treatment rooms thoughtfully designed for children's comfort.",
+    description: "Vibrant, colourful treatment rooms thoughtfully designed with ceiling TV for children to distract during treatment.",
     objectPosition: "center",
   },
   {
     src: "/5.webp",
-    title: "Orthodontic Treatment Room",
-    description: "An advanced orthodontic suite equipped with the latest technology.",
+    title: "Root Canal Treatment Room",
+    description: "Comfort-focused treatment spaces designed to help you feel relaxed throughout your visit.",
     objectPosition: "center",
   },
 ];

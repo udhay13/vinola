@@ -38,14 +38,14 @@ const whyUs = [
   {
     icon: Clock,
     title: "Convenient Hours",
-    desc: "Open Monday–Saturday 9:30 AM to 8:00 PM. Sundays by appointment. Implant Day every 2nd Sunday.",
+    desc: "Open Monday–Saturday 9:30 AM to 8:00 PM. Sundays by appointment. Second Sundays of every month is dedicated to Implant Dentistry.",
   },
 ];
 
 const stats = [
   { value: "26+", label: "Years Experience" },
   { value: "5,000+", label: "Happy Patients" },
-  { value: "30+", label: "Treatment Options" },
+  { value: "25+", label: "Treatment Options" },
   { value: "100%", label: "Sterilization Compliance" },
 ];
 
@@ -55,7 +55,7 @@ export default function AboutPage() {
       <PageHero
         badge="About Vinola Dental"
         title="Caring for Smiles,"
-        titleHighlight="Since 1998"
+        titleHighlight="Since 2006"
         subtitle="A Salem-based dental practice built on trust, technology, and the belief that exceptional care should be accessible to every family."
         breadcrumbs={[{ label: "About Us" }]}
       />
@@ -118,14 +118,14 @@ export default function AboutPage() {
               How Vinola Dental <span className="text-gradient">Began</span>
             </h2>
             <p className="text-[#6B7280] leading-relaxed">
-              Vinola Dental was founded by Dr. Vinola Duraisamy after completing her BDS from Rajah Muthiah Dental College, Annamalai University in 2000. With a vision to bring specialist-level dental care to Salem families, she established a practice rooted in compassion, precision, and continuous learning.
+              Vinola Dental was founded by Dr. Vinola Duraisamy after completing her BDS in 2000 and MDS in 2005 from Rajah Muthiah Dental College and Hospital, Annamalai University. With a vision to bring specialist-level dental care to Salem families, she established a practice rooted in compassion, precision, and continuous learning. The clinic was first started as <strong className="text-[#1F2937]">My Dentistry</strong> in 2005 and was proudly rebranded as <strong className="text-[#1F2937]">Vinola Dental</strong> in 2023.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             {[
-              { year: "2000", event: "Dr. Vinola completes BDS from Annamalai University" },
-              { year: "2005", event: "Vinola Dental clinic opens in Salem, Tamil Nadu" },
-              { year: "2024", event: "Expanded with digital technology, laser dentistry & CAD/CAM" },
+              { year: "2005", event: "My Dentistry opens in Salem, Tamil Nadu — Dr. Vinola's first practice." },
+              { year: "2023", event: "Rebranded as Vinola Dental — a new chapter of specialist-level family care." },
+              { year: "2024", event: "Expanded with digital technology, laser dentistry & CAD/CAM." },
             ].map((m) => (
               <div key={m.year} className="glass rounded-2xl p-6 card-shadow">
                 <div className="text-3xl font-bold text-[#2CB1BC] mb-2" style={{ fontFamily: "var(--font-poppins)" }}>{m.year}</div>

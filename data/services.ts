@@ -135,27 +135,32 @@ export const servicesData: ServiceItem[] = [
     bg: "rgba(245,158,11,0.08)",
     heroImage: "/smile1.png",
     detailImages: ["/doctor.png", "/smile2.png", "/smile3.png"],
-    quickFacts: ["Braces or digital appliances", "Preventive care", "Comfort-focused reviews"],
+    quickFacts: ["Clear Aligners", "Metal & Ceramic Braces", "Retainers", "Preventive care"],
     focusAreas: [
       {
-        title: "Crowded teeth",
+        title: "Clear Aligners (Invisalign / Spark / Illusion / Precisalign)",
         description:
-          "Create better spacing so teeth are easier to clean, maintain, and align beautifully over time.",
+          "Removable digital customized orthodontic treatment to straighten teeth — comfortable, discreet, and tailored to your smile goals.",
       },
       {
-        title: "Visible gaps",
+        title: "Metal Braces",
         description:
-          "Close uneven spaces with a plan that protects balance, proportion, and facial harmony.",
+          "The most durable orthodontic option. Available in Standard 3M, Damon, and Progressive Orthodontics USA — customised brackets designed for every tooth and movement.",
       },
       {
-        title: "Bite imbalance",
+        title: "Ceramic Braces",
         description:
-          "Correcting how upper and lower teeth meet can improve comfort, wear patterns, and function.",
+          "Tooth-coloured brackets that blend with your smile for a more discreet alignment journey with the effectiveness of traditional braces.",
       },
       {
-        title: "Smile confidence",
+        title: "Interceptive Orthodontics",
         description:
-          "We design gradual, trackable changes so you feel the progress throughout treatment.",
+          "Early phased orthodontic treatment designed to guide proper jaw growth, create space for erupting teeth, and correct bite issues before they become severe.",
+      },
+      {
+        title: "Retainers",
+        description:
+          "Post-treatment retainers to preserve alignment and protect your results long-term after active orthodontic therapy.",
       },
     ],
     process: [
@@ -451,7 +456,7 @@ export const servicesData: ServiceItem[] = [
     bg: "rgba(244,114,182,0.08)",
     heroImage: "/family.png",
     detailImages: ["/doctor.png", "/smile2.png", "/smile3.png"],
-    quickFacts: ["Gentle pediatric care", "Invisalign for Kids/Teens", "Parent-guided prevention"],
+    quickFacts: ["Preventive orthodontics", "Pulpectomy & Pulpotomy", "Paediatric crowns", "Anxiety-free care"],
     focusAreas: [
       {
         title: "First dental visits",
@@ -464,19 +469,19 @@ export const servicesData: ServiceItem[] = [
           "Regular monitoring and simple coaching help protect growing teeth from early damage.",
       },
       {
-        title: "Habit guidance",
+        title: "Preventive Orthodontics",
         description:
-          "We support families with brushing routines, food awareness, and age-appropriate care habits.",
+          "Encourages proper dental growth and helps avoid complex orthodontic treatment by guiding jaw and tooth development early.",
       },
       {
-        title: "Reducing dental fear",
+        title: "Pulpectomy / Pulpotomy",
         description:
-          "Child-friendly communication helps lower anxiety and build trust over repeated visits.",
+          "Pulpectomy removes infected pulp from the entire tooth to relieve pain and preserve the primary tooth. Pulpotomy removes infected pulp from the crown while preserving the healthy root pulp.",
       },
       {
-        title: "Invisalign for Kids & Teens",
+        title: "Crowns for Children",
         description:
-          "Clear aligners designed specifically for growing smiles, offering a comfortable and discreet orthodontic option.",
+          "Custom-made caps that restore weakened teeth and protect them until they naturally fall out. Available in Metal, Stainless Steel, or Zirconia crowns designed to protect and restore your child's teeth.",
       },
     ],
     process: [
@@ -614,7 +619,7 @@ export const servicesData: ServiceItem[] = [
     bg: "rgba(217,70,239,0.08)",
     heroImage: "/smile1.png",
     detailImages: ["/smile3.png", "/doctor.png", "/smile2.png"],
-    quickFacts: ["Whitening and veneers", "Smile-design led", "Facial harmony focus"],
+    quickFacts: ["Composite Veneering", "Smile Design", "Teeth Whitening", "Facial harmony focus"],
     focusAreas: [
       {
         title: "Shade improvement",
@@ -622,19 +627,19 @@ export const servicesData: ServiceItem[] = [
           "Whitening and aesthetic planning help brighten the smile while keeping it believable and balanced.",
       },
       {
-        title: "Chipped or uneven edges",
+        title: "Composite Veneering",
         description:
-          "We refine contours so the smile looks smoother, more polished, and naturally proportioned.",
+          "Tooth-coloured composite applied to the front surface of teeth to correct chips, discolouration, and shape irregularities — a conservative, beautiful result.",
+      },
+      {
+        title: "Smile Design / Smile Makeover",
+        description:
+          "A personalised aesthetic plan using digital planning tools to create your ideal smile shape and shade — customised to your facial features and personal goals.",
       },
       {
         title: "Smile proportion balance",
         description:
           "Cosmetic planning considers lip line, tooth shape, and facial symmetry instead of isolated teeth.",
-      },
-      {
-        title: "Confidence in photos and conversations",
-        description:
-          "The design goal is a smile that looks radiant, polished, and still feels recognizably yours.",
       },
     ],
     process: [
@@ -679,6 +684,85 @@ export const servicesData: ServiceItem[] = [
       { value: "Smile design", label: "Treatment lens" },
       { value: "Shade guided", label: "Aesthetic planning" },
       { value: "Confidence boost", label: "Patient outcome" },
+    ],
+  },
+  {
+    slug: "full-mouth-rehabilitation",
+    icon: Layers,
+    title: "Full Mouth Rehabilitation",
+    description:
+      "A complete multidisciplinary dentistry approach prioritizing oral health wellness, gum, bone, and joint health.",
+    fullDescription:
+      "Full Mouth Rehabilitation is complete dentistry. It's a multidisciplinary approach where oral health wellness is the priority. We meticulously evaluate and restore the harmony between your gums, bone, tooth structure, joints, and muscles to create a healthy, long-lasting, and beautiful smile.",
+    color: "#8B5CF6",
+    bg: "rgba(139,92,246,0.08)",
+    heroImage: "/smile2.png",
+    detailImages: ["/doctor.png", "/smile1.png", "/family.png"],
+    quickFacts: ["Complete dentistry", "Multidisciplinary approach", "Oral health wellness"],
+    focusAreas: [
+      {
+        title: "Comprehensive Evaluation",
+        description:
+          "A detailed assessment of your gums, jawbone, teeth, and temporomandibular joints (TMJ) to establish a baseline for total oral wellness.",
+      },
+      {
+        title: "Prosthodontics Integration",
+        description:
+          "Rebuilding missing or severely worn tooth structure using crowns, bridges, implants, or dentures to restore proper bite and function.",
+      },
+      {
+        title: "Orthodontics Alignment",
+        description:
+          "Correcting misalignments to ensure teeth meet perfectly, reducing strain on joints and muscles and improving long-term stability.",
+      },
+      {
+        title: "Gum and Bone Health",
+        description:
+          "Establishing a strong, disease-free foundation by treating periodontal issues before restorative work begins.",
+      },
+    ],
+    process: [
+      {
+        title: "In-Depth Consultation & Diagnostics",
+        description:
+          "Extensive digital imaging, bite analysis, and aesthetic planning to map out the entire rehabilitation journey.",
+        duration: "Phase 01",
+      },
+      {
+        title: "Foundational Health",
+        description:
+          "Addressing urgent issues like decay, infection, or gum disease to create a stable environment for restoration.",
+        duration: "Phase 02",
+      },
+      {
+        title: "Reconstruction & Alignment",
+        description:
+          "Executing the coordinated prosthetic and orthodontic treatments required to rebuild your smile.",
+        duration: "Phase 03",
+      },
+      {
+        title: "Final Refinement & Maintenance",
+        description:
+          "Fine-tuning the bite and aesthetics, followed by a customized long-term maintenance plan.",
+        duration: "Phase 04",
+      },
+    ],
+    comfortPoints: [
+      "A carefully phased approach so you are never overwhelmed",
+      "Coordination of all specialists under one comprehensive plan",
+      "Focus on function and joint comfort, not just aesthetics",
+      "Clear communication of timelines and expectations at every step",
+    ],
+    resultHighlights: [
+      "A fully restored, pain-free bite and jaw joint",
+      "Complete eradication of active dental disease",
+      "A stunning, harmonious smile that looks natural",
+      "Long-lasting results built on a healthy structural foundation",
+    ],
+    stats: [
+      { value: "Comprehensive", label: "Treatment Scope" },
+      { value: "Multidisciplinary", label: "Clinical Approach" },
+      { value: "Total Wellness", label: "Primary Goal" },
     ],
   },
 ];
